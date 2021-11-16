@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Work Experience{% endblock title %}
+
+{% block background %}{% load static %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock background %}
+
+{% block headers %}
+    <h1>Work Experience</h1>
+	<!-- <span class="subheading">Cloud OS DevOps & Infrastructure Engineering</span>-->
+{% endblock headers %}
+
+
+{% block content %}
+	{% for project in projects %}
+		<!-- Proyecto -->
+		<div class="row project">  	
+			<div class="col-lg-3 col-md-4 offset-lg-1">
+				<img class="img-fluid" src="{{project.image.url}}" alt="">
+			</div>
+			<div class="col-lg-7 col-md-8">
+				<h2 class="section-heading title">{{project.title}}</h2>
+			<p>{{project.company}}</p>
+			<p>{{project.date}}</p> 
+			<p>{{project.jobdescription}}</p>
+			{% if project.link %}
+				<p><a href="{{project.link}}">More information</a></p>
+			{% endif %}	
+			</div>
+		</div>
+	{% endfor %}
+{% endblock content %}
