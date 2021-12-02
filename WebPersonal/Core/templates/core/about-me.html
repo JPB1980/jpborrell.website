@@ -2,7 +2,7 @@
 
 {% block title %}About Me{% endblock title %}
 
-{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock background %}
+{% block background %}{% load static %}{% static 'core/img/aboutme03.jpg' %}{% endblock background %}
 
 {% block headers %}
     <h1>About me</h1>
@@ -13,12 +13,29 @@
 {% block content %}
 <div class="row">
     <div class="col-lg-3 col-md-4 offset-lg-1">
-        <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+     <img class="img-fluid avatar" src="{% static 'core/img/JPB.jpg' %}" alt="">
     </div>
-    <div class="col-lg-7 col-md-8">
-        <h2 class="section-heading">Juan Pablo Borrell</h2>   
-        <p>Nacido en</p>
-        <p></p>
+    <div class="col-lg-7 col-md-8"><br>
+        <h2 class="section-heading">Juan Pablo Borrell</h2><br>
+        <h3 class="section-subheading">Personal Life</h3>   
+        <p> Born in Buenos Aires, Argentina; August 30, 1980. I did all my studies in Buenos Aires. 
+        Once I finished high school, I looked for my independence and started working. In parallel; I also studied. I am married and have two children. 
+        I very much enjoy spending time outside with them and my wife playing, running, or having a barbecue. 
+        I currently live in Germany since July 2020.</p><br>
+    </div>
+    <div class="col-lg-50 col-md-25">
+        <h3 class="section-subheading">Hobbies and free time</h3>
+        <p> I like sports such as handball or riding a bicycle, but my passion is soccer. 
+        I try as much as possible to show my children that sport is very good, not only because it helps their health; but also as a 
+        way to socialize and make new friends. I also really like to read, especially history books or thrillers. I like travel 
+        and to know new places, customs and foods. Together with my wife, we like to share series and movies.</p><br>
+        <h3 class="section-subheading">Career</h3>   
+        <p>I love technology and that is why I have been working in IT since I finished high school. I have more than 20 years of 
+        experience and throughout my career, I have worked in small companies and multinationals such as Ernst & Young (EY), 
+        Bayer AG or Accenture. In all this time I have been in different teams, developing different tasks and above all learning 
+        many different technologies. I also have essential courses and certifications to improve my knowledge. I like, as far as possible, 
+        to be as up-to-date as possible in terms of new technologies and always basing myself on my technological preferences. 
+        </p>
     </div>
 </div>
 {% endblock content %}

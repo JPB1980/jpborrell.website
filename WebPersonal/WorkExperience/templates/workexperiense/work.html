@@ -2,7 +2,7 @@
 
 {% block title %}Work Experience{% endblock title %}
 
-{% block background %}{% load static %}{% static 'core/img/portfolio-bg.jpg' %}{% endblock background %}
+{% block background %}{% load static %}{% static 'core/img/portfolio01.jpg' %}{% endblock background %}
 
 {% block headers %}
     <h1>Work Experience</h1>
@@ -18,10 +18,10 @@
 				<img class="img-fluid" src="{{project.image.url}}" alt="">
 			</div>
 			<div class="col-lg-7 col-md-8">
-				<h2 class="section-heading title">{{project.title}}</h2>
+				<h2 class="section-heading title">{{project.title|safe}}</h2>
 			<p>{{project.company}}</p>
-			<p>{{project.date}}</p> 
-			<p>{{project.jobdescription}}</p>
+			<p>{{project.date|safe}}</p> 
+			<p>{{project.jobdescription|safe}}</p>
 			{% if project.link %}
 				<p><a href="{{project.link}}">More information</a></p>
 			{% endif %}	

@@ -78,31 +78,49 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
+
+                {% if LINK_LINKEDIN %}
+                  <a href="{{LINK_LINKEDIN}}" class="link">
+                    <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                {% endif %}
+
+                {% if LINK_FACEBOOK %}
+                  <a href="{{LINK_FACEBOOK}}" class="link">
+                    <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
-                  </span>
-                </a>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                  </a>
+                {% endif %}
+
+                {% if LINK_TWITTER %}
+                    <a href="{{LINK_TWITTER}}" class="link">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                {% endif %}
+
+                {% if LINK_INSTAGRAM %}
+                    <a href="{{LINK_INSTAGRAM}}" class="link">
+                      <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                      </span>
+                    </a>
+                {% endif %}
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; 2018 · Juan Pérez (Ingeniero Industrial) </p>
+          
+            <p class="copyright text-muted">Copyright &copy; 2021 · Juan Pablo Borrell (Cloud OS DevOps & Infrastructure Engineering) </p>
+            <center>
+            <p class="copyright text-muted">Designed, developed and implemented by Juan Pablo Borrell.</p>
+            </center>
           </div>
         </div>
       </div>

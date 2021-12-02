@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Core',
+    'ckeditor',
     'WorkExperience.apps.WorkexperienceConfig',
     'Skills.apps.SkillsConfig',
+    'Social.apps.SocialConfig',
 ]
 
 MIDDLEWARE = [
@@ -66,6 +68,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'Social.processors.ctx_dict'
             ],
         },
     },
@@ -131,3 +134,13 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Media files
 MEDIA_URL = '/Media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "Media")
+
+# Ckeditor
+
+CKEDITOR_CONFIGS = {
+                    'default': {
+                                'toolbar': 'full',
+                                'height': 300,
+                                'width': 1000,
+                                },
+                    }
